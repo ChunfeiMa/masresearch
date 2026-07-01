@@ -71,7 +71,9 @@ class EnrichedItem(BaseModel):
     # Citation graph (papers only). arxiv_id is set when the item maps to arXiv.
     arxiv_id: str = ""
     citation_count: int | None = None  # None = not looked up / not a paper
-    citations: list[Citation] = Field(default_factory=list)
+    citations: list[Citation] = Field(default_factory=list)  # papers citing this one
+    reference_count: int | None = None
+    references: list[Citation] = Field(default_factory=list)  # papers this one cites
 
     # Hierarchical UI content (L2/L3)
     tldr: str = ""

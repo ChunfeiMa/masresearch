@@ -19,9 +19,11 @@ def _citations_one(item: EnrichedItem, stats) -> EnrichedItem:
         return item  # not a paper we can resolve
     item.arxiv_id = arxiv_id
     try:
-        count, citing = cite.fetch_citations(arxiv_id)
-        item.citation_count = count
-        item.citations = citing
+        n = cite.fetch_neighbors(arxiv_id)
+        item.citation_count = n["citation_count"]
+        item.citations = n["citations"]
+        item.reference_count = n["reference_count"]
+        item.references = n["references"]
     except Exception as exc:
         if stats is not None:
             stats.errors.append(f"citations {item.id}: {type(exc).__name__}: {exc}")
@@ -33,6 +35,7 @@ def citations(state: PipelineState) -> PipelineState:
     if not items:
         return {}
     stats = state.get("stats")
-    # workers=2 keeps us gentle on the unauthenticated Semantic Scholar pool.
-    updated = llm.map_parallel(lambda it: _citations_one(it, stats), items, workers=2)
+    # Sequential (workers=1): the unauthenticated Semantic Scholar pool 429s
+    # under any concurrency. Few paper items per run, so this stays fast.
+    updated = llm.map_parallel(lambda it: _citations_one(it, stats), items, workers=1)
     return {"enriched": updated}

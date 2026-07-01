@@ -2,11 +2,12 @@
 
 import { useEffect, useRef } from "react";
 
-// Interactive 3D citation graph: the item at the hub, citing papers around it.
+// Interactive 3D paper graph: the item at the hub, related papers around it.
 // Drag rotates the scene (TrackballControls), hover shows the paper title,
-// click opens the paper. 3d-force-graph (three.js) is dynamically imported so it
-// stays out of the initial bundle.
-export default function CitationGraph({ center, citations }) {
+// click opens the paper. `outward` flips arrow direction: false = papers cite
+// this one (in), true = this paper cites them (out). 3d-force-graph (three.js)
+// is dynamically imported so it stays out of the initial bundle.
+export default function CitationGraph({ center, citations, accent = "#22d3ee", outward = false }) {
   const ref = useRef(null);
   const instanceRef = useRef(null);
 
@@ -28,7 +29,8 @@ export default function CitationGraph({ center, citations }) {
           url: c.arxiv_id ? `https://arxiv.org/abs/${c.arxiv_id}` : c.url,
           kind: "cite",
         });
-        links.push({ source: id, target: "__center" });
+        // outward: this paper -> reference; inward: citing paper -> this paper
+        links.push(outward ? { source: "__center", target: id } : { source: id, target: "__center" });
       });
 
       const width = ref.current.clientWidth || 640;
@@ -39,11 +41,13 @@ export default function CitationGraph({ center, citations }) {
         .backgroundColor("#0e1730")
         .nodeLabel("name")
         .nodeVal((n) => (n.kind === "center" ? 10 : 2))
-        .nodeColor((n) => (n.kind === "center" ? "#5b8cff" : "#22d3ee"))
+        .nodeColor((n) => (n.kind === "center" ? "#5b8cff" : accent))
         .nodeOpacity(0.95)
         .linkColor(() => "#3a4d78")
         .linkOpacity(0.55)
         .linkWidth(0.6)
+        .linkDirectionalArrowLength(3)
+        .linkDirectionalArrowRelPos(1)
         .enableNodeDrag(false)
         .showNavInfo(false)
         .onNodeClick((n) => n.url && window.open(n.url, "_blank", "noreferrer"));

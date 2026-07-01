@@ -243,24 +243,45 @@ function ScoreBar({ label, value, color }) {
   );
 }
 
-function Citations({ item }) {
-  const cites = item.citations || [];
-  const count = item.citation_count;
+function PaperGraphs({ item }) {
+  const center = { title: item.title, url: item.url };
   return (
     <>
-      <h4>Cited by{count != null ? ` · ${count}` : ""}</h4>
-      {cites.length === 0 ? (
-        <p className="muted">
-          {count
-            ? `${count} citations indexed; citing-paper details unavailable.`
-            : "No citations indexed yet — this paper is recent."}
-        </p>
+      <NeighborSection
+        label="Cited by"
+        count={item.citation_count}
+        items={item.citations}
+        center={center}
+        accent="#22d3ee"
+        outward={false}
+        empty="No citations indexed yet — this paper is recent."
+      />
+      <NeighborSection
+        label="References (papers it cites)"
+        count={item.reference_count}
+        items={item.references}
+        center={center}
+        accent="#f5a524"
+        outward={true}
+        empty="No references indexed yet."
+      />
+    </>
+  );
+}
+
+function NeighborSection({ label, count, items, center, accent, outward, empty }) {
+  const list = items || [];
+  return (
+    <>
+      <h4>{label}{count != null ? ` · ${count}` : ""}</h4>
+      {list.length === 0 ? (
+        <p className="muted">{empty}</p>
       ) : (
         <>
-          <CitationGraph center={{ title: item.title, url: item.url }} citations={cites} />
+          <CitationGraph center={center} citations={list} accent={accent} outward={outward} />
           <div className="cite-hint">Drag to rotate · hover a node for the title · click to open</div>
           <div className="citelist">
-            {cites.map((c, i) => (
+            {list.map((c, i) => (
               <a
                 key={i}
                 className="citerow"
@@ -275,8 +296,8 @@ function Citations({ item }) {
               </a>
             ))}
           </div>
-          {count > cites.length && (
-            <div className="muted small">Showing {cites.length} of {count} citing papers.</div>
+          {count > list.length && (
+            <div className="muted small">Showing {list.length} of {count} papers.</div>
           )}
         </>
       )}
@@ -346,7 +367,7 @@ function Drawer({ item, onClose }) {
             </>
           )}
 
-          {item.arxiv_id && <Citations item={item} />}
+          {item.arxiv_id && <PaperGraphs item={item} />}
 
           {item.tags?.length > 0 && (
             <>

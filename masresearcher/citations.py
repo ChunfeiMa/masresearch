@@ -55,44 +55,66 @@ def _get(path: str, params: dict) -> dict | None:
     return resp.json()
 
 
-def fetch_citations(arxiv_id: str, limit: int = 40) -> tuple[int | None, list[Citation]]:
-    """Return (citation_count, citing_papers). count is None if the lookup fails."""
+_FIELDS = "title,year,authors,externalIds,url"
+
+
+def _to_citation(paper: dict) -> Citation | None:
+    title = (paper.get("title") or "").strip()
+    if not title:
+        return None
+    ext = paper.get("externalIds") or {}
+    return Citation(
+        title=title,
+        url=paper.get("url") or "",
+        year=paper.get("year"),
+        authors=[a.get("name", "") for a in (paper.get("authors") or [])][:6],
+        arxiv_id=ext.get("ArXiv") or "",
+    )
+
+
+def _fetch_list(pid: str, kind: str, inner_key: str, limit: int) -> list[Citation]:
+    try:
+        data = _get(f"/paper/{pid}/{kind}", {"fields": _FIELDS, "limit": min(limit, 100)})
+    except Exception:
+        data = None
+    out = []
+    for row in (data or {}).get("data", []):
+        c = _to_citation(row.get(inner_key) or {})
+        if c:
+            out.append(c)
+    time.sleep(0.3)  # be polite to the shared unauthenticated pool
+    return out
+
+
+def fetch_neighbors(arxiv_id: str, limit: int = 40) -> dict:
+    """Return citation + reference counts and lists for a paper.
+
+    keys: citation_count, citations (who cites it), reference_count,
+    references (what it cites). Counts are None if the paper isn't resolvable.
+    """
+    empty = {"citation_count": None, "citations": [], "reference_count": None, "references": []}
     if not arxiv_id:
-        return None, []
+        return empty
     pid = f"arXiv:{arxiv_id}"
 
     try:
-        meta = _get(f"/paper/{pid}", {"fields": "citationCount"})
+        meta = _get(f"/paper/{pid}", {"fields": "citationCount,referenceCount"})
     except Exception:
         meta = None
     if meta is None:
-        return None, []
-    count = meta.get("citationCount")
+        return empty
 
-    citing: list[Citation] = []
-    if count:
-        try:
-            data = _get(
-                f"/paper/{pid}/citations",
-                {"fields": "title,year,authors,externalIds,url", "limit": min(limit, 100)},
-            )
-        except Exception:
-            data = None
-        for row in (data or {}).get("data", []):
-            cp = row.get("citingPaper") or {}
-            title = (cp.get("title") or "").strip()
-            if not title:
-                continue
-            ext = cp.get("externalIds") or {}
-            citing.append(
-                Citation(
-                    title=title,
-                    url=cp.get("url") or "",
-                    year=cp.get("year"),
-                    authors=[a.get("name", "") for a in (cp.get("authors") or [])][:6],
-                    arxiv_id=ext.get("ArXiv") or "",
-                )
-            )
-        time.sleep(0.3)  # be polite to the shared unauthenticated pool
+    cc = meta.get("citationCount")
+    rc = meta.get("referenceCount")
+    return {
+        "citation_count": cc,
+        "citations": _fetch_list(pid, "citations", "citingPaper", limit) if cc else [],
+        "reference_count": rc,
+        "references": _fetch_list(pid, "references", "citedPaper", limit) if rc else [],
+    }
 
-    return count, citing
+
+def fetch_citations(arxiv_id: str, limit: int = 40) -> tuple[int | None, list[Citation]]:
+    """Backwards-compatible helper — forward citations only."""
+    n = fetch_neighbors(arxiv_id, limit)
+    return n["citation_count"], n["citations"]
