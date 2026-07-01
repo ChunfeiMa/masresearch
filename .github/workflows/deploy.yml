@@ -4,8 +4,11 @@
 name: deploy
 
 on:
-  push:
-    branches: [data] # redeploy when new data lands
+  # A push made with the built-in GITHUB_TOKEN (the pipeline's data-branch push)
+  # can't trigger `on: push`, so key off the pipeline workflow completing instead.
+  workflow_run:
+    workflows: ["pipeline"]
+    types: [completed]
   workflow_dispatch: {}
 
 permissions:
@@ -20,6 +23,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Skip if the pipeline run failed (workflow_dispatch has no workflow_run ctx).
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Checkout code (main)
         uses: actions/checkout@v4
