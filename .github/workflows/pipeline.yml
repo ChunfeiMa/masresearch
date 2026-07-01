@@ -43,6 +43,10 @@ jobs:
 
       - name: Run pipeline
         env:
+          # LLM provider (OpenAI). Anthropic key optional — set only one provider.
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL_PRIMARY: gpt-5.4-mini
+          OPENAI_EMBEDDING_MODEL: text-embedding-3-small
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
           LANGSMITH_TRACING: "true"

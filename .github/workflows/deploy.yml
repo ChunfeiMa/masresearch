@@ -37,6 +37,9 @@ jobs:
 
       - name: Build static site
         working-directory: web
+        env:
+          # Project Pages serve under /<repo>; must match the GitHub repo name.
+          NEXT_PUBLIC_BASE_PATH: /masresearch
         run: |
           # Copy generated JSON into the app's public/data
           mkdir -p public/data
