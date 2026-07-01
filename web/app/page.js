@@ -45,10 +45,13 @@ export default function Page() {
 
   const sorted = useMemo(() => {
     const arr = [...items];
+    const graphScore = (x) => (x.citation_count || 0) + (x.references?.length || 0);
     const cmp = {
       newest: (a, b) => (b.published_at || b.enriched_at || "").localeCompare(a.published_at || a.enriched_at || ""),
       novelty: (a, b) => (b.novelty_score || 0) - (a.novelty_score || 0),
       impact: (a, b) => (b.impact_score || 0) - (a.impact_score || 0),
+      cited: (a, b) => (b.citation_count || 0) - (a.citation_count || 0),
+      graph: (a, b) => graphScore(b) - graphScore(a),
     }[sort];
     return arr.sort(cmp);
   }, [items, sort]);
@@ -116,6 +119,8 @@ export default function Page() {
           <option value="newest">Newest</option>
           <option value="novelty">Novelty</option>
           <option value="impact">Impact</option>
+          <option value="cited">Most cited</option>
+          <option value="graph">Has citation graph</option>
         </select>
       </div>
 
@@ -208,6 +213,7 @@ function Section({ tkey, items, onOpen }) {
 }
 
 function Card({ item, onOpen }) {
+  const hasGraph = item.citation_count || item.references?.length;
   return (
     <div className="card" onClick={() => onOpen(item)}>
       <div className="top">
@@ -215,6 +221,13 @@ function Card({ item, onOpen }) {
         <span className="date">{fmtDate(item.published_at)}</span>
       </div>
       <h3>{item.title}</h3>
+      {hasGraph ? (
+        <div className="graphbadge">
+          🔗 citation graph
+          {item.citation_count ? ` · cited ${item.citation_count}` : ""}
+          {item.references?.length ? ` · ${item.references.length} refs` : ""}
+        </div>
+      ) : null}
       {item.tldr && <p className="tldr">{item.tldr}</p>}
       {item.tags?.length > 0 && (
         <div className="tags">
