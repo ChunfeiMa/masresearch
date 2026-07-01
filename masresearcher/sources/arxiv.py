@@ -73,7 +73,8 @@ def fetch_arxiv(state: PipelineState) -> PipelineState:
             items.append(
                 RawItem(
                     source_type=SourceType.ARXIV,
-                    source_name=f"arxiv:{arxiv_id.split('v')[0]}",
+                    # Coarse channel for "by source" stats; the paper id lives in the url/id.
+                    source_name="arxiv",
                     title=r.title.strip().replace("\n", " "),
                     url=r.entry_id,
                     authors=[a.name for a in r.authors][:12],

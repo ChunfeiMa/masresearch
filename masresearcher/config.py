@@ -127,3 +127,22 @@ TOPICS: dict[str, dict] = {
 }
 
 TOPIC_KEYS = list(TOPICS.keys())
+
+
+def match_topics(text: str) -> list[str]:
+    """Topic keys whose keywords appear in `text` (used to tag & filter items
+    from keyword-agnostic sources like RSS / web search / GitHub)."""
+    t = (text or "").lower()
+    return [k for k, cfg in TOPICS.items() if any(kw in t for kw in cfg["keywords"])]
+
+
+# Curated AI-lab / research blog feeds for the RSS source. Feeds that 404 or
+# change are skipped gracefully at fetch time (failures recorded to run stats).
+RSS_FEEDS: list[dict] = [
+    {"name": "huggingface", "url": "https://huggingface.co/blog/feed.xml"},
+    {"name": "bair", "url": "https://bair.berkeley.edu/blog/feed.xml"},
+    {"name": "deepmind", "url": "https://deepmind.google/blog/rss.xml"},
+    {"name": "nvidia-dev", "url": "https://developer.nvidia.com/blog/feed"},
+    {"name": "mit-ai", "url": "https://news.mit.edu/rss/topic/artificial-intelligence2"},
+    {"name": "google-research", "url": "https://research.google/blog/rss/"},
+]

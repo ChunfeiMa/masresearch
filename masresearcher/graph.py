@@ -16,12 +16,18 @@ from .nodes.enrich import enrich
 from .nodes.persist import persist
 from .nodes.planner import plan
 from .sources.arxiv import fetch_arxiv
+from .sources.github_hf import fetch_github_hf
+from .sources.rss import fetch_rss
+from .sources.tavily import fetch_tavily
 from .state import PipelineState
 
 # Register source nodes here; each gets edges planner→node→dedup automatically.
+# All fan out in parallel from the planner and append to state["raw"].
 SOURCE_NODES = {
     "src_arxiv": fetch_arxiv,
-    # Phase 2+: "src_rss": fetch_rss, "src_tavily": fetch_tavily, "src_github_hf": ...
+    "src_rss": fetch_rss,
+    "src_tavily": fetch_tavily,
+    "src_github_hf": fetch_github_hf,
 }
 
 

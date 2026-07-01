@@ -67,22 +67,15 @@ class Store:
             ).fetchall()
         return {r["id"] for r in rows}
 
-    def find_similar(self, embedding: bytes, threshold: float = 0.92) -> str | None:
-        """Phase 2 hook: return id of a near-duplicate by cosine similarity.
-
-        Not yet implemented — exact dedup via seen_ids() covers Phase 0/1.
-        """
-        return None
-
     # --- Writes ----------------------------------------------------------
 
-    def upsert_item(self, item: EnrichedItem) -> None:
+    def upsert_item(self, item: EnrichedItem, embedding: bytes | None = None) -> None:
         with closing(self._conn()) as c:
             c.execute(
                 """INSERT OR REPLACE INTO items
                    (id, source_type, source_name, title, url, published_at,
-                    enriched_at, topics, novelty, impact, payload)
-                   VALUES (?,?,?,?,?,?,?,?,?,?,?)""",
+                    enriched_at, topics, novelty, impact, payload, embedding)
+                   VALUES (?,?,?,?,?,?,?,?,?,?,?,?)""",
                 (
                     item.id,
                     item.source_type.value,
@@ -95,9 +88,20 @@ class Store:
                     item.novelty_score,
                     item.impact_score,
                     item.model_dump_json(),
+                    embedding,
                 ),
             )
             c.commit()
+
+    def load_embeddings(self, limit: int = 5000) -> list[bytes]:
+        """Return stored embedding blobs (most recent first) for dedup compare."""
+        with closing(self._conn()) as c:
+            rows = c.execute(
+                "SELECT embedding FROM items WHERE embedding IS NOT NULL "
+                "ORDER BY enriched_at DESC LIMIT ?",
+                (limit,),
+            ).fetchall()
+        return [r["embedding"] for r in rows]
 
     def save_run(self, stats: RunStats) -> None:
         with closing(self._conn()) as c:

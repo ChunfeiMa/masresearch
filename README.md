@@ -18,7 +18,9 @@ GitHub Pages
 - **Phase 0 (scaffold)** ✅ — package layout, config, schemas, SQLite store, LangGraph skeleton, JSON exporter, CI drafts.
 - **Phase 1 (arXiv + LLM summaries)** ✅ — live arXiv source (category × topic-query search, lookback filtered, per-topic failures recorded to run stats) and **provider-agnostic** structured summaries (tldr → abstract → introduction → contributions → why-it-matters + tags). Works with **OpenAI** (`OPENAI_API_KEY`, e.g. `gpt-5.4-mini`) or **Anthropic** (`ANTHROPIC_API_KEY`) — whichever key is set (OpenAI wins if both). Falls back to a stub per-item when no key or on error, so runs never hard-stop.
 
-Roadmap: **P2** RSS/Tavily/GitHub-HF sources + vector dedup · **P3** classify (topics/scores) + Mermaid diagrams · **P4** Next.js UI · **P5** enable Actions cron + Pages.
+- **Phase 2 (multi-source + vector dedup)** ✅ — three more parallel source branches: curated **RSS** blogs (feedparser), **Tavily** web search (news-scoped, needs `TAVILY_API_KEY`), and **GitHub repo search + HuggingFace daily papers** (unauthenticated). Added **near-duplicate dedup** via OpenAI `text-embedding-3-small` (cosine ≥ 0.90) so the same paper surfaced across sources collapses to one item; embeddings persist for future-run comparison. Every source records failures to run stats instead of failing the run.
+
+Roadmap: **P3** classify (topics/scores) + Mermaid diagrams · **P4** Next.js UI · **P5** enable Actions cron + Pages.
 
 ## Layout
 

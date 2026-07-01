@@ -17,5 +17,6 @@ class PipelineState(TypedDict, total=False):
     queries: dict[str, list[str]]        # topic_key -> expanded queries
     raw: Annotated[list[RawItem], _extend]  # accumulated across source branches
     fresh: list[RawItem]                 # after dedup
+    embeddings: dict[str, bytes]         # item id -> embedding blob (for persist)
     enriched: list[EnrichedItem]
     stats: RunStats

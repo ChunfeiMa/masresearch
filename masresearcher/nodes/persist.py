@@ -11,6 +11,7 @@ from ..store import Store
 
 def persist(state: PipelineState) -> PipelineState:
     store = Store()
+    emb_map = state.get("embeddings", {})
     for item in state.get("enriched", []):
-        store.upsert_item(item)
+        store.upsert_item(item, embedding=emb_map.get(item.id))
     return {}
