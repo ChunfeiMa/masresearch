@@ -16,7 +16,7 @@ GitHub Pages
 ## Status
 
 - **Phase 0 (scaffold)** ✅ — package layout, config, schemas, SQLite store, LangGraph skeleton, JSON exporter, CI drafts.
-- **Phase 1 (arXiv + Claude)** ✅ — live arXiv source (category × topic-query search, lookback filtered, per-topic failures recorded to run stats) and Claude structured summaries (tldr → abstract → introduction → contributions → why-it-matters + tags). Falls back to a stub per-item when no key or on error, so runs never hard-stop.
+- **Phase 1 (arXiv + LLM summaries)** ✅ — live arXiv source (category × topic-query search, lookback filtered, per-topic failures recorded to run stats) and **provider-agnostic** structured summaries (tldr → abstract → introduction → contributions → why-it-matters + tags). Works with **OpenAI** (`OPENAI_API_KEY`, e.g. `gpt-5.4-mini`) or **Anthropic** (`ANTHROPIC_API_KEY`) — whichever key is set (OpenAI wins if both). Falls back to a stub per-item when no key or on error, so runs never hard-stop.
 
 Roadmap: **P2** RSS/Tavily/GitHub-HF sources + vector dedup · **P3** classify (topics/scores) + Mermaid diagrams · **P4** Next.js UI · **P5** enable Actions cron + Pages.
 
@@ -44,7 +44,7 @@ Requires Python **3.11+** (LangGraph). On macOS: `brew install python@3.11`.
 ```bash
 python3.11 -m venv .venv && source .venv/bin/activate
 pip install -e .
-cp .env.example .env        # add ANTHROPIC_API_KEY, TAVILY_API_KEY, LANGSMITH_API_KEY
+cp .env.example .env        # set OPENAI_API_KEY (or ANTHROPIC_API_KEY); Tavily/LangSmith optional
 python -m masresearcher.run # writes data/*.json + state/seen.sqlite
 ```
 

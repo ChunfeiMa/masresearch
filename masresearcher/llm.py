@@ -1,9 +1,10 @@
-"""Claude-backed enrichment.
+"""LLM-backed enrichment (provider-agnostic).
 
 summarize() turns a RawItem's raw abstract into the structured, hierarchical
-content the UI renders (tldr → abstract → introduction → contributions). Uses the
-"deep" model (Opus) via LangChain structured output so we get a validated object
-back and let the model retry on schema mismatch.
+content the UI renders (tldr → abstract → introduction → contributions). It uses
+LangChain structured output so we get a validated object back and let the model
+retry on schema mismatch. The provider is chosen by which API key is set
+(OpenAI preferred; Anthropic otherwise) — see config.Settings.llm_provider.
 
 Classification (topics/scores) and the Mermaid diagram are Phase 3; this module
 exposes just the summary for Phase 1.
@@ -11,7 +12,7 @@ exposes just the summary for Phase 1.
 
 from __future__ import annotations
 
-from langchain_anthropic import ChatAnthropic
+from langchain_core.language_models.chat_models import BaseChatModel
 from pydantic import BaseModel, Field
 from tenacity import retry, stop_after_attempt, wait_exponential
 
@@ -44,13 +45,32 @@ _SYSTEM = (
 )
 
 
-def _client() -> ChatAnthropic:
-    return ChatAnthropic(
-        model=settings.model_deep,
-        api_key=settings.anthropic_api_key,
-        max_tokens=1200,
-        temperature=0.2,
-    ).with_structured_output(SummaryResult)
+def _base_model() -> BaseChatModel:
+    """Pick the chat model from whichever provider key is configured."""
+    provider = settings.llm_provider
+    if provider == "openai":
+        from langchain_openai import ChatOpenAI
+
+        # Note: no temperature override — some GPT-5-family models only accept the
+        # default. max_tokens left to the model default so reasoning isn't truncated.
+        return ChatOpenAI(
+            model=settings.openai_model_primary,
+            api_key=settings.openai_api_key,
+        )
+    if provider == "anthropic":
+        from langchain_anthropic import ChatAnthropic
+
+        return ChatAnthropic(
+            model=settings.model_deep,
+            api_key=settings.anthropic_api_key,
+            max_tokens=1200,
+            temperature=0.2,
+        )
+    raise RuntimeError("No LLM provider key configured (OPENAI_API_KEY or ANTHROPIC_API_KEY).")
+
+
+def _client():
+    return _base_model().with_structured_output(SummaryResult)
 
 
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(min=2, max=20), reraise=True)
@@ -66,4 +86,4 @@ def summarize(item: RawItem) -> SummaryResult:
 
 
 def available() -> bool:
-    return bool(settings.anthropic_api_key)
+    return settings.llm_provider is not None
