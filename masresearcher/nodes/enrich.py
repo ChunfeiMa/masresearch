@@ -59,22 +59,23 @@ def _llm_enrich(item: RawItem, topics: list[str]) -> EnrichedItem:
     return e
 
 
+def _enrich_one(item: RawItem, use_llm: bool, stats) -> EnrichedItem:
+    topics = _guess_topics(item)
+    if use_llm:
+        try:
+            return _llm_enrich(item, topics)
+        except Exception as exc:  # per-item fallback; keep the run going
+            if stats is not None:
+                stats.errors.append(f"enrich {item.id}: {exc}")
+    return _stub_enrich(item, topics)
+
+
 def enrich(state: PipelineState) -> PipelineState:
     fresh = state.get("fresh", [])[: settings.max_items_per_run]
     stats = state.get("stats")
     use_llm = llm.available()
 
-    enriched: list[EnrichedItem] = []
-    for item in fresh:
-        topics = _guess_topics(item)
-        if use_llm:
-            try:
-                enriched.append(_llm_enrich(item, topics))
-                continue
-            except Exception as exc:  # per-item fallback; keep the run going
-                if stats is not None:
-                    stats.errors.append(f"enrich {item.id}: {exc}")
-        enriched.append(_stub_enrich(item, topics))
+    enriched = llm.map_parallel(lambda it: _enrich_one(it, use_llm, stats), fresh)
 
     if stats is not None:
         stats.enriched = len(enriched)

@@ -20,7 +20,9 @@ GitHub Pages
 
 - **Phase 2 (multi-source + vector dedup)** ✅ — three more parallel source branches: curated **RSS** blogs (feedparser), **Tavily** web search (news-scoped, needs `TAVILY_API_KEY`), and **GitHub repo search + HuggingFace daily papers** (unauthenticated). Added **near-duplicate dedup** via OpenAI `text-embedding-3-small` (cosine ≥ 0.90) so the same paper surfaced across sources collapses to one item; embeddings persist for future-run comparison. Every source records failures to run stats instead of failing the run.
 
-Roadmap: **P3** classify (topics/scores) + Mermaid diagrams · **P4** Next.js UI · **P5** enable Actions cron + Pages.
+- **Phase 3 (classify + diagrams)** ✅ — two more LLM agents as their own nodes: a **classifier** (assigns topics from the fixed set + novelty/impact scores 0-1 for ranking) and a **diagram agent** (emits a concise, validated Mermaid `flowchart` concept diagram per item). Per-item LLM calls run concurrently (thread pool) so the summarize → classify → diagram chain stays fast. Chain: `dedup → enrich → classify → diagram → persist`.
+
+Roadmap: **P4** Next.js hierarchical UI (dashboard → topic → abstract → detail + Mermaid render) · **P5** enable Actions cron + Pages.
 
 ## Layout
 

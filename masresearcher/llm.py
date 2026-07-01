@@ -1,22 +1,25 @@
 """LLM-backed enrichment (provider-agnostic).
 
-summarize() turns a RawItem's raw abstract into the structured, hierarchical
-content the UI renders (tldr → abstract → introduction → contributions). It uses
-LangChain structured output so we get a validated object back and let the model
-retry on schema mismatch. The provider is chosen by which API key is set
-(OpenAI preferred; Anthropic otherwise) — see config.Settings.llm_provider.
+Three agents, each a structured-output call the pipeline runs as its own node:
+  - summarize() : raw abstract -> hierarchical UI content (tldr..contributions)
+  - classify()  : assign topics (from the fixed set) + novelty/impact scores
+  - diagram()   : a concise Mermaid concept diagram
 
-Classification (topics/scores) and the Mermaid diagram are Phase 3; this module
-exposes just the summary for Phase 1.
+LangChain structured output validates each result and lets the model retry on
+schema mismatch. The provider is chosen by which API key is set (OpenAI
+preferred; Anthropic otherwise) — see config.Settings.llm_provider.
 """
 
 from __future__ import annotations
+
+from concurrent.futures import ThreadPoolExecutor
+from typing import Callable, TypeVar
 
 from langchain_core.language_models.chat_models import BaseChatModel
 from pydantic import BaseModel, Field
 from tenacity import retry, stop_after_attempt, wait_exponential
 
-from .config import settings
+from .config import TOPIC_KEYS, TOPICS, settings
 from .models import RawItem
 
 
@@ -38,11 +41,36 @@ class SummaryResult(BaseModel):
     tags: list[str] = Field(description="3-6 short lowercase topical tags.")
 
 
+class ClassifyResult(BaseModel):
+    """Topic assignment + salience scores for ranking on the dashboard."""
+
+    topics: list[str] = Field(
+        description="Subset of the allowed topic keys this item genuinely fits."
+    )
+    novelty_score: float = Field(
+        description="0.0-1.0: how novel/original the idea is vs prior work.", ge=0, le=1
+    )
+    impact_score: float = Field(
+        description="0.0-1.0: likely practical impact on the field.", ge=0, le=1
+    )
+
+
+class DiagramResult(BaseModel):
+    """A small Mermaid diagram capturing the item's core concept."""
+
+    mermaid: str = Field(
+        description="Valid Mermaid source, a `flowchart TD` with 4-8 nodes capturing "
+        "the core method/pipeline. No markdown code fences."
+    )
+
+
 _SYSTEM = (
     "You are a research analyst curating a daily feed on Physical AI, Multi-Agent "
     "Systems, and Vision AI. Summarize the given item faithfully and concisely for a "
     "technical audience. Do not invent results not present in the text."
 )
+
+_TOPIC_MENU = "\n".join(f"  - {k}: {TOPICS[k]['label']}" for k in TOPIC_KEYS)
 
 
 def _base_model() -> BaseChatModel:
@@ -69,21 +97,55 @@ def _base_model() -> BaseChatModel:
     raise RuntimeError("No LLM provider key configured (OPENAI_API_KEY or ANTHROPIC_API_KEY).")
 
 
-def _client():
-    return _base_model().with_structured_output(SummaryResult)
+def _client(schema):
+    return _base_model().with_structured_output(schema)
 
 
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(min=2, max=20), reraise=True)
 def summarize(item: RawItem) -> SummaryResult:
-    llm = _client()
     prompt = (
         f"Title: {item.title}\n"
         f"Source: {item.source_name}\n"
         f"Authors: {', '.join(item.authors) or 'n/a'}\n\n"
         f"Abstract / content:\n{item.raw_summary or '(no abstract provided)'}"
     )
-    return llm.invoke([("system", _SYSTEM), ("human", prompt)])
+    return _client(SummaryResult).invoke([("system", _SYSTEM), ("human", prompt)])
+
+
+@retry(stop=stop_after_attempt(3), wait=wait_exponential(min=2, max=20), reraise=True)
+def classify(title: str, text: str) -> ClassifyResult:
+    prompt = (
+        "Classify this item. Choose only from these topic keys "
+        f"(return the key, not the label):\n{_TOPIC_MENU}\n\n"
+        "Pick every topic that genuinely applies (often just one). Then score "
+        "novelty and impact from 0 to 1.\n\n"
+        f"Title: {title}\n\nContent:\n{text[:3000]}"
+    )
+    return _client(ClassifyResult).invoke([("system", _SYSTEM), ("human", prompt)])
+
+
+@retry(stop=stop_after_attempt(3), wait=wait_exponential(min=2, max=20), reraise=True)
+def diagram(title: str, text: str) -> DiagramResult:
+    prompt = (
+        "Draw a concise Mermaid `flowchart TD` (4-8 nodes) that illustrates the core "
+        "method, pipeline, or idea of this item so a reader grasps it at a glance. "
+        "Use short node labels. Output only Mermaid source, no code fences.\n\n"
+        f"Title: {title}\n\nContent:\n{text[:3000]}"
+    )
+    return _client(DiagramResult).invoke([("system", _SYSTEM), ("human", prompt)])
 
 
 def available() -> bool:
     return settings.llm_provider is not None
+
+
+T = TypeVar("T")
+R = TypeVar("R")
+
+
+def map_parallel(fn: Callable[[T], R], items: list[T], workers: int = 8) -> list[R]:
+    """Run fn over items concurrently (LLM calls are I/O-bound), preserving order."""
+    if not items:
+        return []
+    with ThreadPoolExecutor(max_workers=min(workers, len(items))) as ex:
+        return list(ex.map(fn, items))
