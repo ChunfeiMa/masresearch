@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "3d-force-graph": "^1.73.4",
     "mermaid": "^11.4.0",
     "next": "14.2.15",
     "react": "^18.3.1",

@@ -47,8 +47,18 @@ class RawItem(BaseModel):
         return self
 
 
+class Citation(BaseModel):
+    """A paper that cites one of our items (from Semantic Scholar)."""
+
+    title: str
+    url: str = ""  # Semantic Scholar page (always present)
+    year: int | None = None
+    authors: list[str] = Field(default_factory=list)
+    arxiv_id: str = ""  # if the citing paper is on arXiv
+
+
 class EnrichedItem(BaseModel):
-    """A RawItem after the summarize / classify / diagram nodes."""
+    """A RawItem after the summarize / classify / diagram / citations nodes."""
 
     id: str
     source_type: SourceType
@@ -57,6 +67,11 @@ class EnrichedItem(BaseModel):
     url: str
     authors: list[str] = Field(default_factory=list)
     published_at: datetime | None = None
+
+    # Citation graph (papers only). arxiv_id is set when the item maps to arXiv.
+    arxiv_id: str = ""
+    citation_count: int | None = None  # None = not looked up / not a paper
+    citations: list[Citation] = Field(default_factory=list)
 
     # Hierarchical UI content (L2/L3)
     tldr: str = ""

@@ -1,6 +1,6 @@
 """LangGraph assembly.
 
-    planner ─▶ [ source branches ] ─▶ dedup ─▶ enrich ─▶ classify ─▶ diagram ─▶ persist
+    planner ─▶ [ source branches ] ─▶ dedup ─▶ enrich ─▶ classify ─▶ diagram ─▶ citations ─▶ persist
 
 Source branches fan out in parallel and append to state["raw"] via the list
 reducer in state.py. Phase 0 wires a single demo source; adding a real source is
@@ -11,6 +11,7 @@ from __future__ import annotations
 
 from langgraph.graph import END, START, StateGraph
 
+from .nodes.citations import citations
 from .nodes.classify import classify
 from .nodes.dedup import dedup
 from .nodes.diagram import diagram
@@ -43,6 +44,7 @@ def build_graph():
     builder.add_node("enrich", enrich)
     builder.add_node("classify", classify)
     builder.add_node("diagram", diagram)
+    builder.add_node("citations", citations)
     builder.add_node("persist", persist)
 
     builder.add_edge(START, "planner")
@@ -52,7 +54,8 @@ def build_graph():
     builder.add_edge("dedup", "enrich")
     builder.add_edge("enrich", "classify")
     builder.add_edge("classify", "diagram")
-    builder.add_edge("diagram", "persist")
+    builder.add_edge("diagram", "citations")
+    builder.add_edge("citations", "persist")
     builder.add_edge("persist", END)
 
     return builder.compile()

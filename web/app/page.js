@@ -1,9 +1,13 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useEffect, useMemo, useState } from "react";
 import MermaidDiagram from "../components/MermaidDiagram";
 import Sparkline from "../components/Sparkline";
 import { TOPIC_META, fmtDate, loadJSON, topicColor, topicLabel } from "../lib/data";
+
+// three.js graph is heavy + browser-only → load client-side on demand.
+const CitationGraph = dynamic(() => import("../components/CitationGraph"), { ssr: false });
 
 const TOPIC_ORDER = ["physical_ai", "multi_agent", "vision_ai"];
 const REFRESH_MS = 10 * 60 * 1000; // re-pull the hourly-updated JSON every 10 min
@@ -239,6 +243,47 @@ function ScoreBar({ label, value, color }) {
   );
 }
 
+function Citations({ item }) {
+  const cites = item.citations || [];
+  const count = item.citation_count;
+  return (
+    <>
+      <h4>Cited by{count != null ? ` · ${count}` : ""}</h4>
+      {cites.length === 0 ? (
+        <p className="muted">
+          {count
+            ? `${count} citations indexed; citing-paper details unavailable.`
+            : "No citations indexed yet — this paper is recent."}
+        </p>
+      ) : (
+        <>
+          <CitationGraph center={{ title: item.title, url: item.url }} citations={cites} />
+          <div className="cite-hint">Drag to rotate · hover a node for the title · click to open</div>
+          <div className="citelist">
+            {cites.map((c, i) => (
+              <a
+                key={i}
+                className="citerow"
+                href={c.arxiv_id ? `https://arxiv.org/abs/${c.arxiv_id}` : c.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className="citetitle">{c.title}</span>
+                <span className="citemeta">
+                  {[c.authors?.slice(0, 3).join(", "), c.year].filter(Boolean).join(" · ")}
+                </span>
+              </a>
+            ))}
+          </div>
+          {count > cites.length && (
+            <div className="muted small">Showing {cites.length} of {count} citing papers.</div>
+          )}
+        </>
+      )}
+    </>
+  );
+}
+
 function Drawer({ item, onClose }) {
   useEffect(() => {
     const onKey = (e) => e.key === "Escape" && onClose();
@@ -300,6 +345,9 @@ function Drawer({ item, onClose }) {
               <p>{item.why_it_matters}</p>
             </>
           )}
+
+          {item.arxiv_id && <Citations item={item} />}
+
           {item.tags?.length > 0 && (
             <>
               <h4>Tags</h4>

@@ -34,6 +34,8 @@ class Settings(BaseSettings):
     )
 
     tavily_api_key: str = Field(default="", alias="TAVILY_API_KEY")
+    # Optional — higher Semantic Scholar rate limits for citation lookups.
+    semantic_scholar_api_key: str = Field(default="", alias="SEMANTIC_SCHOLAR_API_KEY")
 
     langsmith_tracing: bool = Field(default=False, alias="LANGSMITH_TRACING")
     langsmith_api_key: str = Field(default="", alias="LANGSMITH_API_KEY")
