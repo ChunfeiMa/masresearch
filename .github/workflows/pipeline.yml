@@ -56,15 +56,17 @@ jobs:
 
       - name: Publish data + state to `data` branch
         run: |
-          git config user.name "mas-bot"
-          git config user.email "mas-bot@users.noreply.github.com"
+          # --global so the fresh `git init` repo below inherits the identity.
+          git config --global user.name "mas-bot"
+          git config --global user.email "mas-bot@users.noreply.github.com"
           rm -rf published/data published/state
           mkdir -p published/data published/state
           cp -r data/* published/data/ 2>/dev/null || true
           cp state/seen.sqlite published/state/ 2>/dev/null || true
           cd published
+          rm -rf .git
           git init -q
           git checkout -q -B data
           git add -A
-          git commit -q -m "pipeline: $(date -u +%Y-%m-%dT%H:%M:%SZ)" || echo "no changes"
+          git commit -q -m "pipeline: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" data
