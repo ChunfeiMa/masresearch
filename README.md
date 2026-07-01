@@ -22,7 +22,19 @@ GitHub Pages
 
 - **Phase 3 (classify + diagrams)** ✅ — two more LLM agents as their own nodes: a **classifier** (assigns topics from the fixed set + novelty/impact scores 0-1 for ranking) and a **diagram agent** (emits a concise, validated Mermaid `flowchart` concept diagram per item). Per-item LLM calls run concurrently (thread pool) so the summarize → classify → diagram chain stays fast. Chain: `dedup → enrich → classify → diagram → persist`.
 
-Roadmap: **P4** Next.js hierarchical UI (dashboard → topic → abstract → detail + Mermaid render) · **P5** enable Actions cron + Pages.
+- **Phase 4 (hierarchical UI)** ✅ — Next.js static-export app in `web/`. **L0** dashboard (total + per-topic counts, items/run sparkline, live-updated timestamp), **L1** topic-grouped sortable cards (newest / novelty / impact, topic filter chips), **L2/L3** detail drawer (tldr → **rendered Mermaid diagram** → abstract → introduction → contributions → why-it-matters → source link). Reads `data/*.json` at runtime and re-polls every 10 min so hourly updates appear without a reload. Builds clean to a static export for Pages.
+
+Roadmap: **P5** enable Actions cron + Pages (wire secrets, first live hourly runs).
+
+## Preview the UI locally
+
+```bash
+cd web
+npm install
+mkdir -p public/data && cp ../data/*.json public/data/   # sample data for preview
+npm run build
+python3 -m http.server 8099 --directory out               # open http://localhost:8099
+```
 
 ## Layout
 
