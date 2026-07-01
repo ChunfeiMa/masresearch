@@ -1,0 +1,11 @@
+{
+  "name": "mermaid-validate",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Validate Mermaid diagram source with mermaid's own parser (used by the Python pipeline).",
+  "dependencies": {
+    "jsdom": "^25.0.1",
+    "mermaid": "^11.4.0"
+  }
+}

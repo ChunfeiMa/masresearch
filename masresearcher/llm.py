@@ -125,13 +125,20 @@ def classify(title: str, text: str) -> ClassifyResult:
 
 
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(min=2, max=20), reraise=True)
-def diagram(title: str, text: str) -> DiagramResult:
+def diagram(title: str, text: str, repair_error: str = "", prev: str = "") -> DiagramResult:
     prompt = (
         "Draw a concise Mermaid `flowchart TD` (4-8 nodes) that illustrates the core "
         "method, pipeline, or idea of this item so a reader grasps it at a glance. "
-        "Use short node labels. Output only Mermaid source, no code fences.\n\n"
+        "Use short node labels. Wrap any label containing spaces or punctuation in "
+        'double quotes (e.g. A["Vision-Language model"]). Do not use reserved words '
+        "(end, graph, class) as node ids. Output only Mermaid source, no code fences.\n\n"
         f"Title: {title}\n\nContent:\n{text[:3000]}"
     )
+    if repair_error:
+        prompt += (
+            f"\n\nYour previous diagram was INVALID Mermaid:\n{prev}\n\n"
+            f"Parser error: {repair_error}\nReturn a corrected, valid version."
+        )
     return _client(DiagramResult).invoke([("system", _SYSTEM), ("human", prompt)])
 
 

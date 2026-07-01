@@ -17,6 +17,8 @@ venv/
 
 # Node / Next.js
 web/node_modules/
+tools/mermaid-validate/node_modules/
+tools/mermaid-validate/package-lock.json
 web/.next/
 web/out/
 # populated at deploy time from the `data` branch

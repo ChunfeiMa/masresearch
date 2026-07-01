@@ -41,6 +41,14 @@ jobs:
       - name: Install
         run: pip install -e .
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Mermaid validator
+        working-directory: tools/mermaid-validate
+        run: npm install --no-audit --no-fund
+
       - name: Run pipeline
         env:
           # LLM provider (OpenAI). Anthropic key optional — set only one provider.

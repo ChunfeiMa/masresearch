@@ -97,3 +97,9 @@ python -m masresearcher.run # writes data/*.json + state/seen.sqlite
 ```
 
 Phase 0 runs with no keys (demo source, stub enrichment) so you can verify the plumbing.
+
+Optional — enable diagram validation (regenerated/repaired if a diagram is invalid Mermaid):
+
+```bash
+cd tools/mermaid-validate && npm install   # needs Node; otherwise validation is skipped
+```
