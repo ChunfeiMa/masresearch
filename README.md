@@ -28,11 +28,12 @@ flowchart TB
         summarize["📝 Summarize agent<br/>tldr · abstract · intro · contributions"]
         classify["🏷️ Classify agent<br/>topics + novelty/impact scores"]
         diagram["📊 Diagram agent<br/>Mermaid concept diagram"]
+        cites["🔗 Citations agent<br/>cited-by + references (Semantic Scholar)"]
         persist[("💾 SQLite<br/>items + embeddings")]
 
         planner --> arxiv & rss & tavily & ghhf
         arxiv & rss & tavily & ghhf --> dedup
-        dedup --> summarize --> classify --> diagram --> persist
+        dedup --> summarize --> classify --> diagram --> cites --> persist
     end
 
     llm{{"🤖 OpenAI<br/>gpt-5.4-mini + embeddings"}} -.-> dedup & summarize & classify & diagram
