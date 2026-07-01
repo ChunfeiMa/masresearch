@@ -1,0 +1,66 @@
+# Hourly research pipeline. Runs the LangGraph system, then commits the
+# generated data/ + dedup state to the `data` branch (kept off main to avoid
+# noisy history). Finalized in Phase 5 — enable secrets before turning on.
+name: pipeline
+
+on:
+  schedule:
+    - cron: "0 * * * *" # top of every hour (UTC); GitHub may delay under load
+  workflow_dispatch: {} # manual trigger for testing / external cron ping
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code (main)
+        uses: actions/checkout@v4
+
+      - name: Restore data branch (state + prior items)
+        uses: actions/checkout@v4
+        with:
+          ref: data
+          path: published
+        continue-on-error: true # first run: data branch may not exist yet
+
+      - name: Seed dedup state from published branch
+        run: |
+          mkdir -p state data
+          [ -f published/state/seen.sqlite ] && cp published/state/seen.sqlite state/ || true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Run pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          LANGSMITH_TRACING: "true"
+          LANGSMITH_API_KEY: ${{ secrets.LANGSMITH_API_KEY }}
+          LANGSMITH_PROJECT: masresearcher
+        run: python -m masresearcher.run
+
+      - name: Publish data + state to `data` branch
+        run: |
+          git config user.name "mas-bot"
+          git config user.email "mas-bot@users.noreply.github.com"
+          rm -rf published/data published/state
+          mkdir -p published/data published/state
+          cp -r data/* published/data/ 2>/dev/null || true
+          cp state/seen.sqlite published/state/ 2>/dev/null || true
+          cd published
+          git init -q
+          git checkout -q -B data
+          git add -A
+          git commit -q -m "pipeline: $(date -u +%Y-%m-%dT%H:%M:%SZ)" || echo "no changes"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" data
