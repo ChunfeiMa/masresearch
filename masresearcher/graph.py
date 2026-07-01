@@ -15,13 +15,13 @@ from .nodes.dedup import dedup
 from .nodes.enrich import enrich
 from .nodes.persist import persist
 from .nodes.planner import plan
-from .sources.demo import fetch_demo
+from .sources.arxiv import fetch_arxiv
 from .state import PipelineState
 
 # Register source nodes here; each gets edges planner→node→dedup automatically.
 SOURCE_NODES = {
-    "src_demo": fetch_demo,
-    # Phase 1+: "src_arxiv": fetch_arxiv, "src_rss": ..., "src_tavily": ...
+    "src_arxiv": fetch_arxiv,
+    # Phase 2+: "src_rss": fetch_rss, "src_tavily": fetch_tavily, "src_github_hf": ...
 }
 
 

@@ -15,10 +15,10 @@ GitHub Pages
 
 ## Status
 
-Phase 0 (scaffold) ✅ — package layout, config, schemas, SQLite store, LangGraph
-skeleton with a demo source, JSON exporter, and CI drafts. Runs end-to-end offline.
+- **Phase 0 (scaffold)** ✅ — package layout, config, schemas, SQLite store, LangGraph skeleton, JSON exporter, CI drafts.
+- **Phase 1 (arXiv + Claude)** ✅ — live arXiv source (category × topic-query search, lookback filtered, per-topic failures recorded to run stats) and Claude structured summaries (tldr → abstract → introduction → contributions → why-it-matters + tags). Falls back to a stub per-item when no key or on error, so runs never hard-stop.
 
-Roadmap: **P1** arXiv source + Claude summaries · **P2** RSS/Tavily/GitHub-HF + vector dedup · **P3** classify + Mermaid diagrams · **P4** Next.js UI · **P5** enable Actions cron + Pages.
+Roadmap: **P2** RSS/Tavily/GitHub-HF sources + vector dedup · **P3** classify (topics/scores) + Mermaid diagrams · **P4** Next.js UI · **P5** enable Actions cron + Pages.
 
 ## Layout
 
