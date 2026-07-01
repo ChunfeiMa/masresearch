@@ -2,15 +2,47 @@
 
 Autonomous multi-agent research feed for **Physical AI**, **Multi-Agent Systems**, and **Vision AI**.
 
-Every hour a LangGraph pipeline discovers new papers, blogs, solutions, and repos across those three topics, enriches each with a structured summary + concept diagram using Claude, and publishes static JSON that a hierarchical UI renders (dashboard → topic → abstract → detail). The whole thing runs on GitHub — Actions cron for the pipeline, Pages for the site — so there's no server to run.
+Every hour a LangGraph pipeline discovers new papers, blogs, solutions, and repos across those three topics, enriches each with a structured summary + concept diagram using an LLM (OpenAI `gpt-5.4-mini`), and publishes static JSON that a hierarchical UI renders (dashboard → topic → abstract → detail). The whole thing runs on GitHub — Actions cron for the pipeline, Pages for the site — so there's no server to run.
 
-```
-GitHub Actions (hourly cron)
-  └─ LangGraph:  planner → [arxiv | rss | tavily | github/hf] → dedup → summarize → classify → diagram → persist
-       ├─ Claude (Opus deep / Haiku cheap) · Tavily search · LangSmith tracing
-       └─ writes data/*.json + state/seen.sqlite  → `data` branch
-GitHub Pages
-  └─ Next.js static site reads data/*.json
+## How the multi-agent system works
+
+A single hourly GitHub Actions run drives a LangGraph graph of agents: a planner fans out to four **source agents** in parallel, their results are de-duplicated (exact + embedding cosine), then three **enrichment agents** (summarize → classify → diagram) process each item before it's persisted and published to the static UI. An LLM backs the enrichment agents and the embeddings; LangSmith traces every node.
+
+```mermaid
+flowchart TB
+    cron(["⏰ GitHub Actions cron — hourly"]) --> planner
+
+    subgraph pipeline["LangGraph pipeline"]
+        direction TB
+        planner["🧭 Planner<br/>topics → queries"]
+
+        subgraph sources["Source agents · parallel fan-out"]
+            direction LR
+            arxiv["📄 arXiv"]
+            rss["📰 RSS blogs"]
+            tavily["🔎 Tavily web"]
+            ghhf["🐙 GitHub · 🤗 HF"]
+        end
+
+        dedup["🧹 Dedup<br/>exact id + vector cosine ≥ 0.90"]
+        summarize["📝 Summarize agent<br/>tldr · abstract · intro · contributions"]
+        classify["🏷️ Classify agent<br/>topics + novelty/impact scores"]
+        diagram["📊 Diagram agent<br/>Mermaid concept diagram"]
+        persist[("💾 SQLite<br/>items + embeddings")]
+
+        planner --> arxiv & rss & tavily & ghhf
+        arxiv & rss & tavily & ghhf --> dedup
+        dedup --> summarize --> classify --> diagram --> persist
+    end
+
+    llm{{"🤖 OpenAI<br/>gpt-5.4-mini + embeddings"}} -.-> dedup & summarize & classify & diagram
+    langsmith[["📈 LangSmith traces"]] -.-> pipeline
+
+    persist --> exporter["📦 export data/*.json"]
+    exporter --> databranch[("🌿 data branch")]
+    databranch --> deploy["🚀 Deploy workflow<br/>Next.js static build"]
+    deploy --> pages["🌐 GitHub Pages"]
+    pages --> reader(["👤 Reader<br/>dashboard → topic → abstract → detail"])
 ```
 
 ## Status
