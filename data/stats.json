@@ -1,0 +1,1010 @@
+{
+  "topics": {
+    "physical_ai": {
+      "label": "Physical AI",
+      "count": 231
+    },
+    "multi_agent": {
+      "label": "Multi-Agent Systems",
+      "count": 203
+    },
+    "vision_ai": {
+      "label": "Vision AI",
+      "count": 743
+    }
+  },
+  "by_source": {
+    "hf:daily_papers": 570,
+    "arxiv": 411,
+    "rss:nvidia-dev": 13,
+    "rss:huggingface": 3,
+    "rss:deepmind": 1,
+    "rss:google-research": 2
+  },
+  "total_items": 1000,
+  "runs": [
+    {
+      "run_id": "run-20261010T211306Z",
+      "started_at": "2026-10-10T21:13:06.558241Z",
+      "finished_at": "2026-10-10T21:13:08.738137Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T201438Z",
+      "started_at": "2026-10-10T20:14:38.593712Z",
+      "finished_at": "2026-10-10T20:14:42.152876Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T191117Z",
+      "started_at": "2026-10-10T19:11:17.124776Z",
+      "finished_at": "2026-10-10T19:11:19.541944Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T181728Z",
+      "started_at": "2026-10-10T18:17:28.389222Z",
+      "finished_at": "2026-10-10T18:17:31.146286Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T171138Z",
+      "started_at": "2026-10-10T17:11:38.644346Z",
+      "finished_at": "2026-10-10T17:11:40.480144Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T161520Z",
+      "started_at": "2026-10-10T16:15:20.526221Z",
+      "finished_at": "2026-10-10T16:15:27.317901Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T151348Z",
+      "started_at": "2026-10-10T15:13:48.386988Z",
+      "finished_at": "2026-10-10T15:13:50.633419Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T141408Z",
+      "started_at": "2026-10-10T14:14:08.966940Z",
+      "finished_at": "2026-10-10T14:14:11.858776Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T131247Z",
+      "started_at": "2026-10-10T13:12:47.351710Z",
+      "finished_at": "2026-10-10T13:12:50.061255Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T122044Z",
+      "started_at": "2026-10-10T12:20:44.532013Z",
+      "finished_at": "2026-10-10T12:20:48.228924Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T111253Z",
+      "started_at": "2026-10-10T11:12:53.800298Z",
+      "finished_at": "2026-10-10T11:12:55.728185Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T101342Z",
+      "started_at": "2026-10-10T10:13:42.792558Z",
+      "finished_at": "2026-10-10T10:13:45.324652Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T091513Z",
+      "started_at": "2026-10-10T09:15:13.153324Z",
+      "finished_at": "2026-10-10T09:15:15.520616Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T081851Z",
+      "started_at": "2026-10-10T08:18:51.997323Z",
+      "finished_at": "2026-10-10T08:18:54.880571Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T071840Z",
+      "started_at": "2026-10-10T07:18:40.467054Z",
+      "finished_at": "2026-10-10T07:18:42.612974Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T062410Z",
+      "started_at": "2026-10-10T06:24:10.752717Z",
+      "finished_at": "2026-10-10T06:24:13.575161Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T051415Z",
+      "started_at": "2026-10-10T05:14:15.845781Z",
+      "finished_at": "2026-10-10T05:14:18.773480Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T041749Z",
+      "started_at": "2026-10-10T04:17:49.390950Z",
+      "finished_at": "2026-10-10T04:18:57.756653Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T032019Z",
+      "started_at": "2026-10-10T03:20:19.697381Z",
+      "finished_at": "2026-10-10T03:20:22.167271Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T022734Z",
+      "started_at": "2026-10-10T02:27:34.074284Z",
+      "finished_at": "2026-10-10T02:27:36.731330Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T013350Z",
+      "started_at": "2026-10-10T01:33:50.658319Z",
+      "finished_at": "2026-10-10T01:33:53.040594Z",
+      "fetched": 28,
+      "duplicates_filtered": 28,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261010T004233Z",
+      "started_at": "2026-10-10T00:42:33.270221Z",
+      "finished_at": "2026-10-10T00:43:00.632909Z",
+      "fetched": 28,
+      "duplicates_filtered": 27,
+      "enriched": 1,
+      "by_source": {
+        "hf:daily_papers": 1
+      },
+      "by_topic": {
+        "vision_ai": 1
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich d25deeb3bfae6903: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify d25deeb3bfae6903: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram d25deeb3bfae6903: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261009T231346Z",
+      "started_at": "2026-10-09T23:13:46.053291Z",
+      "finished_at": "2026-10-09T23:14:24.857571Z",
+      "fetched": 28,
+      "duplicates_filtered": 26,
+      "enriched": 2,
+      "by_source": {
+        "hf:daily_papers": 2
+      },
+      "by_topic": {
+        "physical_ai": 2
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 619382b5c638258e: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 061f848141d4d5f2: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 619382b5c638258e: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 061f848141d4d5f2: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 619382b5c638258e: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 061f848141d4d5f2: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261009T221439Z",
+      "started_at": "2026-10-09T22:14:39.802086Z",
+      "finished_at": "2026-10-09T22:14:42.445011Z",
+      "fetched": 27,
+      "duplicates_filtered": 27,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261009T211320Z",
+      "started_at": "2026-10-09T21:13:20.484833Z",
+      "finished_at": "2026-10-09T21:13:22.477238Z",
+      "fetched": 27,
+      "duplicates_filtered": 27,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261009T201513Z",
+      "started_at": "2026-10-09T20:15:13.083791Z",
+      "finished_at": "2026-10-09T20:15:16.120182Z",
+      "fetched": 29,
+      "duplicates_filtered": 29,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261009T191141Z",
+      "started_at": "2026-10-09T19:11:41.090820Z",
+      "finished_at": "2026-10-09T19:11:43.494794Z",
+      "fetched": 29,
+      "duplicates_filtered": 29,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261009T181840Z",
+      "started_at": "2026-10-09T18:18:40.400194Z",
+      "finished_at": "2026-10-09T18:19:50.344596Z",
+      "fetched": 31,
+      "duplicates_filtered": 30,
+      "enriched": 1,
+      "by_source": {
+        "hf:daily_papers": 1
+      },
+      "by_topic": {
+        "physical_ai": 1
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 6e4bc1f87237b2a4: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 6e4bc1f87237b2a4: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 6e4bc1f87237b2a4: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261009T171226Z",
+      "started_at": "2026-10-09T17:12:26.282734Z",
+      "finished_at": "2026-10-09T17:12:47.416317Z",
+      "fetched": 36,
+      "duplicates_filtered": 35,
+      "enriched": 1,
+      "by_source": {
+        "hf:daily_papers": 1
+      },
+      "by_topic": {
+        "multi_agent": 1,
+        "vision_ai": 1
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich e0d23f86134d9661: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify e0d23f86134d9661: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram e0d23f86134d9661: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261009T161550Z",
+      "started_at": "2026-10-09T16:15:50.287300Z",
+      "finished_at": "2026-10-09T16:16:18.243468Z",
+      "fetched": 37,
+      "duplicates_filtered": 36,
+      "enriched": 1,
+      "by_source": {
+        "hf:daily_papers": 1
+      },
+      "by_topic": {
+        "vision_ai": 1
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 66f34fe3519e0003: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 66f34fe3519e0003: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 66f34fe3519e0003: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261009T151340Z",
+      "started_at": "2026-10-09T15:13:40.079436Z",
+      "finished_at": "2026-10-09T15:14:06.854844Z",
+      "fetched": 41,
+      "duplicates_filtered": 40,
+      "enriched": 1,
+      "by_source": {
+        "hf:daily_papers": 1
+      },
+      "by_topic": {
+        "vision_ai": 1
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich c8450f88d11c6b1e: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify c8450f88d11c6b1e: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram c8450f88d11c6b1e: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261009T141650Z",
+      "started_at": "2026-10-09T14:16:50.024452Z",
+      "finished_at": "2026-10-09T14:17:14.311226Z",
+      "fetched": 43,
+      "duplicates_filtered": 42,
+      "enriched": 1,
+      "by_source": {
+        "hf:daily_papers": 1
+      },
+      "by_topic": {
+        "multi_agent": 1
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 0497b3d23503d5c9: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 0497b3d23503d5c9: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 0497b3d23503d5c9: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261009T131809Z",
+      "started_at": "2026-10-09T13:18:09.248078Z",
+      "finished_at": "2026-10-09T13:18:12.119053Z",
+      "fetched": 48,
+      "duplicates_filtered": 48,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261009T122143Z",
+      "started_at": "2026-10-09T12:21:43.806022Z",
+      "finished_at": "2026-10-09T12:22:20.249852Z",
+      "fetched": 52,
+      "duplicates_filtered": 50,
+      "enriched": 2,
+      "by_source": {
+        "hf:daily_papers": 2
+      },
+      "by_topic": {
+        "vision_ai": 1,
+        "multi_agent": 1
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich b2bd0bff481fd462: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich beb1e995739ecabc: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify b2bd0bff481fd462: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify beb1e995739ecabc: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram b2bd0bff481fd462: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram beb1e995739ecabc: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261009T111407Z",
+      "started_at": "2026-10-09T11:14:07.927453Z",
+      "finished_at": "2026-10-09T11:14:42.409500Z",
+      "fetched": 51,
+      "duplicates_filtered": 49,
+      "enriched": 2,
+      "by_source": {
+        "hf:daily_papers": 2
+      },
+      "by_topic": {
+        "vision_ai": 2
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 88dc642c129164ef: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 007c2a76d77cfd78: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 007c2a76d77cfd78: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 88dc642c129164ef: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 007c2a76d77cfd78: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 88dc642c129164ef: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261009T101545Z",
+      "started_at": "2026-10-09T10:15:45.813792Z",
+      "finished_at": "2026-10-09T10:15:48.941420Z",
+      "fetched": 52,
+      "duplicates_filtered": 52,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261009T091928Z",
+      "started_at": "2026-10-09T09:19:28.249222Z",
+      "finished_at": "2026-10-09T09:19:45.134794Z",
+      "fetched": 55,
+      "duplicates_filtered": 54,
+      "enriched": 1,
+      "by_source": {
+        "hf:daily_papers": 1
+      },
+      "by_topic": {
+        "vision_ai": 1
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich fc0431f9329e918c: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify fc0431f9329e918c: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram fc0431f9329e918c: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261009T082242Z",
+      "started_at": "2026-10-09T08:22:42.216120Z",
+      "finished_at": "2026-10-09T08:23:12.756220Z",
+      "fetched": 56,
+      "duplicates_filtered": 54,
+      "enriched": 2,
+      "by_source": {
+        "hf:daily_papers": 2
+      },
+      "by_topic": {
+        "vision_ai": 2,
+        "physical_ai": 1
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 814a87d5c2856d3a: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich a116f5e189a5e944: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify a116f5e189a5e944: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 814a87d5c2856d3a: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram a116f5e189a5e944: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 814a87d5c2856d3a: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261009T072351Z",
+      "started_at": "2026-10-09T07:23:51.071693Z",
+      "finished_at": "2026-10-09T07:24:13.637517Z",
+      "fetched": 57,
+      "duplicates_filtered": 56,
+      "enriched": 1,
+      "by_source": {
+        "hf:daily_papers": 1
+      },
+      "by_topic": {
+        "vision_ai": 1
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich cf4a4785e46b6fe5: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify cf4a4785e46b6fe5: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram cf4a4785e46b6fe5: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261009T062635Z",
+      "started_at": "2026-10-09T06:26:35.454514Z",
+      "finished_at": "2026-10-09T06:27:35.781446Z",
+      "fetched": 61,
+      "duplicates_filtered": 57,
+      "enriched": 4,
+      "by_source": {
+        "hf:daily_papers": 4
+      },
+      "by_topic": {
+        "multi_agent": 2,
+        "physical_ai": 1,
+        "vision_ai": 3
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 020be702a38cf4a2: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 52ebb6c7e87f3a89: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 83813e05e91f8e80: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich bd70bd6b9bb11456: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 52ebb6c7e87f3a89: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 020be702a38cf4a2: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 83813e05e91f8e80: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify bd70bd6b9bb11456: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 020be702a38cf4a2: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 83813e05e91f8e80: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 52ebb6c7e87f3a89: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram bd70bd6b9bb11456: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261009T051631Z",
+      "started_at": "2026-10-09T05:16:31.977036Z",
+      "finished_at": "2026-10-09T05:17:18.480696Z",
+      "fetched": 63,
+      "duplicates_filtered": 58,
+      "enriched": 5,
+      "by_source": {
+        "hf:daily_papers": 5
+      },
+      "by_topic": {
+        "multi_agent": 2,
+        "vision_ai": 3,
+        "physical_ai": 1
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich a3bac9b4445bf481: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 1d44850bf77b9b3b: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 5d1241033c0dfec2: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 7d1ca50bd5fa2c65: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 8585e4fd5da0d5d6: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 8585e4fd5da0d5d6: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 1d44850bf77b9b3b: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 7d1ca50bd5fa2c65: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify a3bac9b4445bf481: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 5d1241033c0dfec2: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 5d1241033c0dfec2: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 8585e4fd5da0d5d6: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 1d44850bf77b9b3b: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram a3bac9b4445bf481: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 7d1ca50bd5fa2c65: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261009T041947Z",
+      "started_at": "2026-10-09T04:19:47.025665Z",
+      "finished_at": "2026-10-09T04:22:01.680058Z",
+      "fetched": 65,
+      "duplicates_filtered": 62,
+      "enriched": 3,
+      "by_source": {
+        "hf:daily_papers": 3
+      },
+      "by_topic": {
+        "physical_ai": 1,
+        "multi_agent": 1,
+        "vision_ai": 3
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 9b643440ebdf2c15: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 6cd7a989ce2328b6: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 80991ff773497262: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 6cd7a989ce2328b6: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 9b643440ebdf2c15: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 80991ff773497262: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 6cd7a989ce2328b6: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 9b643440ebdf2c15: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 80991ff773497262: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261009T032056Z",
+      "started_at": "2026-10-09T03:20:56.988241Z",
+      "finished_at": "2026-10-09T03:22:56.661814Z",
+      "fetched": 69,
+      "duplicates_filtered": 57,
+      "enriched": 12,
+      "by_source": {
+        "hf:daily_papers": 12
+      },
+      "by_topic": {
+        "vision_ai": 9,
+        "physical_ai": 3,
+        "multi_agent": 5
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 5d5597426d40ddae: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 51dd7e0c16b3fa64: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich fce651f99ea6da21: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 540d9db94e31d6ce: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 3cf656b90d00988a: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 4d577ed231b29519: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 9734833fef0e0305: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 3dcb3a9db3075865: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 40b5f6c662ba15df: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich ae82f7fcdf987b80: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 91446d9856c2c20a: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich a7551fc298763e19: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 3cf656b90d00988a: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 5d5597426d40ddae: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 3dcb3a9db3075865: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 9734833fef0e0305: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 540d9db94e31d6ce: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 4d577ed231b29519: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify fce651f99ea6da21: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 51dd7e0c16b3fa64: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 40b5f6c662ba15df: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify a7551fc298763e19: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 91446d9856c2c20a: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify ae82f7fcdf987b80: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 3cf656b90d00988a: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 9734833fef0e0305: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 540d9db94e31d6ce: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 3dcb3a9db3075865: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram fce651f99ea6da21: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 51dd7e0c16b3fa64: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 4d577ed231b29519: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 5d5597426d40ddae: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram ae82f7fcdf987b80: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 40b5f6c662ba15df: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 91446d9856c2c20a: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram a7551fc298763e19: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261009T022854Z",
+      "started_at": "2026-10-09T02:28:54.444200Z",
+      "finished_at": "2026-10-09T02:35:30.222861Z",
+      "fetched": 70,
+      "duplicates_filtered": 30,
+      "enriched": 40,
+      "by_source": {
+        "arxiv": 37,
+        "hf:daily_papers": 3
+      },
+      "by_topic": {
+        "physical_ai": 6,
+        "multi_agent": 2,
+        "vision_ai": 32
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich ef65f3ff92728963: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 241a393e22815d31: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich d49a6b134210a804: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich b5fb533dec7efb28: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich e9e8f4fd803fb998: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 87c464497dcdb5ab: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 588ac8468283d298: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 454cfd9731ce4f87: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 24f72c2345e7854f: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich a49c4398368dd2d6: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 5e25e168ffa56110: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 87fc1bdccc662701: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 63aaf4aeef9d47b0: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 76f4c150b276b4e5: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich bce83e07fc502614: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 078e5b3610055a1a: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 36fd43f5771ea138: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 6d1858f789401957: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich d4977ea25b9ea93e: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich a61788a45c01d2fe: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 2e22d317075808d4: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 077cdcc57592c7d7: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 70fe783d7dfc5cc3: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 2a74e372bf7a6200: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 1aaa7710083e8bad: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich a3fc3abd890beae0: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 960f672dc0ec8239: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich b4beea3f66b50b57: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich d102002887787235: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich ab36be85132285d2: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich e43b4114727a4c7d: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich da28cf03f25fd674: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 45e9594c60051b97: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 83ec616c94c27a8e: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 331838761507e951: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich ae62be61590dceda: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 973ec2049681e29e: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich c43a9b0bd23e872b: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich f4230647d707f265: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich c80307637e7fb9f7: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify ef65f3ff92728963: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 588ac8468283d298: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify d49a6b134210a804: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify e9e8f4fd803fb998: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 241a393e22815d31: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify b5fb533dec7efb28: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 87c464497dcdb5ab: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 454cfd9731ce4f87: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 24f72c2345e7854f: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify a49c4398368dd2d6: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 76f4c150b276b4e5: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 87fc1bdccc662701: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 5e25e168ffa56110: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify bce83e07fc502614: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 078e5b3610055a1a: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 63aaf4aeef9d47b0: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify d4977ea25b9ea93e: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 077cdcc57592c7d7: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 6d1858f789401957: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 36fd43f5771ea138: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 2a74e372bf7a6200: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 2e22d317075808d4: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify a61788a45c01d2fe: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 70fe783d7dfc5cc3: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify d102002887787235: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify a3fc3abd890beae0: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify b4beea3f66b50b57: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 1aaa7710083e8bad: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 960f672dc0ec8239: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify e43b4114727a4c7d: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify ab36be85132285d2: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify da28cf03f25fd674: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 83ec616c94c27a8e: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify c43a9b0bd23e872b: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify ae62be61590dceda: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 331838761507e951: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 45e9594c60051b97: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 973ec2049681e29e: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify c80307637e7fb9f7: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify f4230647d707f265: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 87c464497dcdb5ab: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 588ac8468283d298: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram e9e8f4fd803fb998: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram d49a6b134210a804: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram ef65f3ff92728963: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 241a393e22815d31: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 454cfd9731ce4f87: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram b5fb533dec7efb28: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 24f72c2345e7854f: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram a49c4398368dd2d6: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 76f4c150b276b4e5: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 5e25e168ffa56110: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram bce83e07fc502614: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 87fc1bdccc662701: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 078e5b3610055a1a: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 63aaf4aeef9d47b0: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram d4977ea25b9ea93e: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 36fd43f5771ea138: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 6d1858f789401957: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 2a74e372bf7a6200: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram a61788a45c01d2fe: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 077cdcc57592c7d7: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 70fe783d7dfc5cc3: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 2e22d317075808d4: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 960f672dc0ec8239: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram a3fc3abd890beae0: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 1aaa7710083e8bad: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram d102002887787235: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram ab36be85132285d2: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram e43b4114727a4c7d: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram b4beea3f66b50b57: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram da28cf03f25fd674: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 45e9594c60051b97: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 973ec2049681e29e: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 83ec616c94c27a8e: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram c43a9b0bd23e872b: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram ae62be61590dceda: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram c80307637e7fb9f7: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram f4230647d707f265: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 331838761507e951: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261009T013629Z",
+      "started_at": "2026-10-09T01:36:29.677151Z",
+      "finished_at": "2026-10-09T01:36:31.323090Z",
+      "fetched": 34,
+      "duplicates_filtered": 34,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    },
+    {
+      "run_id": "run-20261009T004411Z",
+      "started_at": "2026-10-09T00:44:11.883124Z",
+      "finished_at": "2026-10-09T00:44:33.225475Z",
+      "fetched": 34,
+      "duplicates_filtered": 32,
+      "enriched": 2,
+      "by_source": {
+        "hf:daily_papers": 2
+      },
+      "by_topic": {
+        "multi_agent": 1,
+        "vision_ai": 1
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich b9dbd71bda9ce573: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich 4a8b7ae02a87bb4b: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify b9dbd71bda9ce573: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify 4a8b7ae02a87bb4b: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram b9dbd71bda9ce573: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram 4a8b7ae02a87bb4b: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261008T231344Z",
+      "started_at": "2026-10-08T23:13:44.656902Z",
+      "finished_at": "2026-10-08T23:14:12.068981Z",
+      "fetched": 35,
+      "duplicates_filtered": 34,
+      "enriched": 1,
+      "by_source": {
+        "hf:daily_papers": 1
+      },
+      "by_topic": {
+        "multi_agent": 1
+      },
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)",
+        "dedup embeddings: AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "enrich b8ac6377b33566fc: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "classify b8ac6377b33566fc: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}",
+        "diagram b8ac6377b33566fc: OpenAIAuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pVsA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+      ]
+    },
+    {
+      "run_id": "run-20261008T221435Z",
+      "started_at": "2026-10-08T22:14:35.078086Z",
+      "finished_at": "2026-10-08T22:14:38.510100Z",
+      "fetched": 36,
+      "duplicates_filtered": 36,
+      "enriched": 0,
+      "by_source": {},
+      "by_topic": {},
+      "errors": [
+        "tavily: no TAVILY_API_KEY set (source skipped)"
+      ]
+    }
+  ]
+}
